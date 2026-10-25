@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5ef">
+  <title>杨国栋 — AIGC 创作者 & 独立开发者</title>
+  <meta name="description" content="杨国栋的创作游乐场。探索 AIGC 影像、插画、角色 IP、产品概念，以及可以亲手体验的独立开发项目。">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="data.js?v=2" defer></script><script src="app.js?v=2" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#works">跳到作品</a>
+<header class="header" id="top">
+  <a class="wordmark" href="#top" aria-label="杨国栋，回到首页">YGD<span class="logo-dot">®</span></a>
+  <nav class="nav" aria-label="主导航"><a href="#works"><small>01</small> 视觉作品</a><a href="#code"><small>02</small> 代码实验</a><a href="#about"><small>03</small> 关于我</a></nav>
+  <a class="contact-link" href="#contact">聊点有趣的 <span>↗</span></a>
+  <button type="button" class="menu-toggle" aria-label="打开导航" aria-expanded="false">菜单 <span>＋</span></button>
+</header>
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-topline"><span><i class="status-dot"></i> 杨国栋 / AIGC 创作者 & 独立开发者</span><span class="mono">A PERSONAL PLAYGROUND, ALWAYS IN PROGRESS.</span></div>
+    <div class="hero-grid">
+      <div class="hero-copy"><div class="eyebrow">IDEAS, IMAGES & LITTLE INVENTIONS</div><h1 id="hero-title">把想象，<br>做成<span class="title-mark">点什么。</span></h1><p>用 AI 探索画面的可能，<br>用代码把灵感变成可以体验的小东西。</p><div class="hero-actions"><a class="button button-dark" href="#works">进入创作游乐场 <span>↘</span></a><span class="hand-note">保持好奇，动手创造。</span></div></div>
+      <div class="hero-collage" aria-label="精选作品拼贴，点击图片可查看项目">
+        <span class="collage-orbit" aria-hidden="true"></span>
+        <button class="poster poster-landscape" type="button" data-open-art="illustrations" aria-label="查看插画系列"><img id="hero-illustration" alt="国风山水插画" fetchpriority="high"><span class="poster-caption"><b>想象，正在生长。</b><small>VISUAL EXPLORATION / 01</small></span></button>
+        <button class="poster poster-chair" type="button" data-open-art="chair" aria-label="查看椅子产品概念"><div class="poster-mini-head"><span>FORM / OBJECT</span><span>↗</span></div><img id="hero-chair" alt="绿色椅子的产品概念"></button>
+        <button class="poster poster-ip" type="button" data-open-art="constellations" aria-label="查看十二星次盲盒设计"><img id="hero-ip" alt="十二星次盲盒角色阵容"><span>SMALL CHARACTERS. BIG IMAGINATION. ↗</span></button>
+        <span class="hero-sticker" aria-hidden="true">AI × CODE<br><b>PLAY!</b></span><span class="collage-note">不同想法，在这里碰头。 ↗</span>
+      </div>
+    </div>
+    <div class="hero-bottom"><div class="hero-index"><span>视觉探索 <b id="collection-count">11</b></span><span>代码项目 <b id="repo-count">24</b></span><span>好奇心 <b>∞</b></span></div><a href="#works" class="scroll-cue"><span>往下，看看作品</span><span class="scroll-circle">↓</span></a></div>
+  </section>
+  <div class="ticker" aria-hidden="true"><div class="ticker-track">VISUAL STORIES <span>✳</span> CREATIVE CODE <span>✳</span> SMALL IDEAS, MADE REAL <span>✳</span> ALWAYS CURIOUS <span>✳</span> VISUAL STORIES <span>✳</span> CREATIVE CODE <span>✳</span> SMALL IDEAS, MADE REAL <span>✳</span> ALWAYS CURIOUS <span>✳</span></div></div>
+  <section class="section works-section" id="works" aria-labelledby="works-title">
+    <div class="section-heading"><div><div class="eyebrow">01 / THE VISUAL SIDE</div><h2 id="works-title">想象的<span class="serif">不同切面。</span></h2></div><p>不限定一种画风。<br>每个系列，都有自己的世界。</p></div>
+    <div class="filter-bar"><div class="art-filters" role="group" aria-label="视觉作品分类"><button type="button" data-filter="全部" aria-pressed="true">全部 <small>11</small></button><button type="button" data-filter="角色与 IP" aria-pressed="false">角色与 IP</button><button type="button" data-filter="CG 与影像" aria-pressed="false">CG 与影像</button><button type="button" data-filter="插画" aria-pressed="false">插画</button><button type="button" data-filter="产品与商业" aria-pressed="false">产品与商业</button></div><span class="filter-count mono" aria-live="polite">SELECTED / 06</span></div>
+    <div class="art-grid" id="art-grid"></div>
+    <div class="more-row"><button type="button" class="button button-outline" id="more-art">展开全部视觉项目 <span>＋</span></button><span class="mono">GOOD IDEAS COME IN MANY FORMS.</span></div>
+  </section>
+  <section class="code-section" id="code" aria-labelledby="code-title">
+    <div class="code-heading"><div><div class="eyebrow">02 / BUILT WITH CURIOSITY</div><h2 id="code-title">不止于看。<br><span class="serif">还可以，玩一下。</span></h2></div><div class="code-heading-right"><span class="code-badge">&lt; IDEAS INTO THINGS /&gt;</span><p>生成艺术、轻量游戏，还有解决日常小问题的工具。<br>这些灵感，已经可以点开体验。</p></div></div>
+    <div id="featured-code"></div>
+    <div class="code-toolbar"><span class="mono">MORE LITTLE INVENTIONS</span><div role="group" class="code-filters" aria-label="代码项目展示"><button type="button" data-code-filter="featured" aria-pressed="true">精选</button><button type="button" data-code-filter="all" aria-pressed="false">全部项目 <span>24</span></button></div></div>
+    <div class="code-grid" id="code-grid"></div>
+    <a class="github-all" href="https://github.com/yguodong627-star?tab=repositories" target="_blank" rel="noopener noreferrer">在 GitHub 发现更多 <span>↗</span></a>
+  </section>
+  <section class="section about-section" id="about" aria-labelledby="about-title"><div class="about-visual" aria-hidden="true"><div class="about-doodle">有点好奇。<br>有点<span>想法。</span><br>也会动手。</div><div class="about-stamp">MAKE / EXPLORE / REPEAT</div><span class="about-spark">✳</span></div><div class="about-copy"><div class="eyebrow">03 / THE PERSON BEHIND THE PLAYGROUND</div><h2 id="about-title">你好，我是<span class="serif">杨国栋。</span></h2><p class="about-role">AIGC 创作者 & 独立开发者</p><p>我喜欢把「如果这样会怎样」变成看得见、用得上的东西。从一组图片、一个角色，到一个能解决小问题的工具，每次创作都是一次新的探索。</p><p>这里放着我的视觉作品与代码实验。它们有不同的样子，但都来自同一份好奇心。</p><div class="about-tags"><span>AIGC 视觉</span><span>角色与产品</span><span>Vibe coding</span><span>持续探索</span></div></div></section>
+  <section class="contact-section" id="contact" aria-labelledby="contact-title"><div class="eyebrow">GOT AN IDEA? LET'S TALK.</div><div class="contact-title-row"><h2 id="contact-title">下一个想法，<br><span class="serif">一起做点什么？</span></h2><a class="contact-orb" href="mailto:ethan@163.com" aria-label="发送邮件给杨国栋">↗</a></div><div class="contact-methods"><a href="mailto:ethan@163.com"><small>EMAIL</small><span>ethan@163.com ↗</span></a><button type="button" data-copy="18579856118"><small>电话 / 微信同号</small><span>185 7985 6118 <span class="copy-label">复制</span></span></button><a href="https://github.com/yguodong627-star" target="_blank" rel="noopener noreferrer"><small>GITHUB</small><span>@yguodong627-star ↗</span></a></div></section>
+</main>
+<footer class="footer"><a class="wordmark" href="#top">YGD<span class="logo-dot">®</span></a><span>© <span id="year">2026</span> 杨国栋 · 用好奇心驱动，用行动实现。</span><a href="studio.html">切换深色版 ↗</a><a href="#top">回到顶部 ↑</a></footer>
+<dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="mono" id="dialog-kicker">VISUAL PROJECT</span><button type="button" class="dialog-close" aria-label="关闭作品详情">关闭 <span>×</span></button></div><div class="dialog-content"><div class="dialog-description"><div><h2 id="dialog-title"></h2><p id="dialog-summary"></p></div><span class="dialog-tag" id="dialog-category"></span></div><div class="image-stage"><button type="button" class="image-arrow previous-image" aria-label="上一张图片">←</button><img id="dialog-image" alt=""><button type="button" class="image-arrow next-image" aria-label="下一张图片">→</button></div><div class="image-caption"><span id="image-name"></span><span class="mono" id="image-count" aria-live="polite"></span></div><div class="image-thumbs" id="image-thumbs" role="group" aria-label="项目图片"></div><div class="dialog-bottom"><span>← → 切换图片 · ESC 关闭</span><button type="button" class="next-project">下一个项目 ↗</button></div></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
